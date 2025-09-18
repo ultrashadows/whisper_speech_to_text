@@ -1,0 +1,228 @@
+# Created by https://www.toptal.com/developers/gitignore/api/python,cuda
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,cuda
+
+### CUDA ###
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+# NVCC intermediates
+*.cu.cpp
+*.cudafe*
+*.fatbin.c
+*.linkinfo
+*.module_id
+*.hash
+*.d
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.pyd
+*.dll
+*.dylib
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+pip-wheel-metadata/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-selfcheck.json
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+.jupyter/lab/workspaces/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+# .python-version
+
+# pipenv
+#Pipfile.lock
+
+# poetry
+#poetry.lock
+
+# pdm
+#pdm.lock
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.env.*
+.envrc
+.venv
+.venv*/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm / JetBrains (recommended to ignore)
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+### Python Patch ###
+# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
+
+# ruff
+.ruff_cache/
+
+# LSP config files
+pyrightconfig.json
+
+### OS junk ###
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Build systems (native/CUDA addons) ###
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+# Ninja
+build.ninja
+.ninja_log
+.ninja_deps
+
+### Compiled artifacts (native builds) ###
+*.o
+*.obj
+*.lib
+*.exp
+*.pdb
+*.exe
+
+### ML / Training artifacts ###
+wandb/
+lightning_logs/
+mlruns/
+runs/
+tensorboard/
+events.out.tfevents*
+# Common model checkpoints/exports (uncomment if you never commit weights)
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.pb
+
+# End of https://www.toptal.com/developers/gitignore/api/python,cuda
