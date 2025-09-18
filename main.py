@@ -107,8 +107,8 @@ class SpeechRepeater:
     Captures speech from the default microphone, transcribes with Whisper, and speaks the result.
 
     The recognizer uses energy-based VAD:
-    - pause_threshold          : seconds of silence that mark the end of a phrase
-    - non_speaking_duration    : minimal silence duration to be considered non-speaking
+    - pause_threshold: seconds of silence that mark the end of a phrase
+    - non_speaking_duration: minimal silence duration to be considered non-speaking
     Both interacting; typically set pause_threshold ≈ 2.0 and non_speaking_duration ≈ 2.0 for "stop after ~2s silence."
     """
     def __init__(
